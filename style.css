@@ -18,18 +18,19 @@ body {
   margin: 0;
   font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell,
     "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji";
-  background-color: rgb(3, 10, 73);
+  background-color: rgb(65, 66, 70);
   color: var(--text);
 }
 
 .container {
   max-width: 980px;
   margin: 40px auto;
-  background: rgba(17, 24, 39, 0.7);
+  background: rgba(53, 57, 65, 0.658);
   border: 1px solid var(--border);
   border-radius: 12px;
   padding: 24px;
   backdrop-filter: blur(6px);
+  box-shadow: 0px 0px 20px rgba(136, 136, 136, 0.568);
 }
 
 h1,
@@ -79,7 +80,7 @@ input[type="tel"] {
   padding: 10px 12px;
   border-radius: 8px;
   border: 1px solid var(--border);
-  background: #0b1222;
+  background: #24262c;
   color: var(--text);
   outline: none;
 }
@@ -103,6 +104,8 @@ button {
 }
 button:hover {
   background: var(--primary-hover);
+  box-shadow: 0px 0px 8px rgba(136, 136, 136, 0.322);
+  transition: 400ms;
 }
 button.secondary {
   background: transparent;
@@ -120,6 +123,11 @@ button.secondary:hover {
   margin: 12px 0;
 }
 
+.table-header h2 {
+  margin: 0 0 0 0;
+  font-size: 25px;
+}
+
 .table-wrapper {
   overflow: auto;
   border: 1px solid var(--border);
@@ -135,7 +143,7 @@ table {
 thead th {
   text-align: left;
   padding: 12px;
-  background: #0b1222;
+  background: #24262c;
   color: var(--muted);
   font-weight: 500;
 }
